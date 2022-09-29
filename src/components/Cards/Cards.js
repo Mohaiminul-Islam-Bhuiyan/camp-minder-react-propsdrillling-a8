@@ -6,19 +6,13 @@ import "./Cards.css"
 
 const Cards = (props) => {
     const [cards, setCards] = useState([])
-    // const [activity, setActivity] = useState([])
+   
 
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setCards(data))
     }, [])
-
-    // const handleAdd = (card) => {
-    //     const newCard = [...activity, card]
-    //     setActivity(newCard)
-    //     // console.log(newCard)
-    // }
 
     return (
         <div className='cards-container'>

@@ -23,7 +23,7 @@ const Selection = (props) => {
                 </div>
             </div>
 
-            <div className='flex flex-wrap gap-2 justify-items-center items-center'>
+            <div className='flex flex-wrap gap-2 justify-around'>
                 <div>
                     <h1>65<small>kg</small></h1>
                     <p>weight</p>
