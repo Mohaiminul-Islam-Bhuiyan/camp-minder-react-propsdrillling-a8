@@ -9,7 +9,6 @@ const Container = () => {
     const handleAdd = (card) => {
         const newCard = [...activity, card]
         setActivity(newCard)
-        // console.log(newCard)
     }
 
     return (
