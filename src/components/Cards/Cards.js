@@ -12,13 +12,17 @@ const Cards = () => {
     }, [])
 
     return (
-        <div className='cards'>
+        <div>
+            <h1>CAMP MINDER</h1>
+            <p>Select Your favourite activity to enjoy your camping.</p>
+            <div className='cards'>
             {
                 cards.map(card => <Card
                 key = {card.id}
                 card = {card}
                 ></Card>)
             }
+            </div>
         </div>
     );
 };
