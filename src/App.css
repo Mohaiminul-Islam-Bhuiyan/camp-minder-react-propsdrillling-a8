@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.app{
+  margin: 3%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
