@@ -5,7 +5,6 @@ import Card from '../Card/Card';
 import "./Cards.css"
 
 const Cards = (props) => {
-    console.log(props)
     const [cards, setCards] = useState([])
     // const [activity, setActivity] = useState([])
 

@@ -5,7 +5,6 @@ import Break from '../Break/Break';
 import ListDetails from '../ListDetails/ListDetails';
 
 const Selection = (props) => {
-    console.log(props.activity[0])
     return (
         <div className='bg-gray-50 rounded-lg text-center'>
             <div className='flex justify-items-center items-center gap-2  p-4'>

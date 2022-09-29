@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ListDetails = (props) => {
-    // console.log(props.time.activity)
 
     const times = props.time.activity
 

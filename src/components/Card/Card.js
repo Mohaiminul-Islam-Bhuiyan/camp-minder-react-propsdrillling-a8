@@ -2,7 +2,6 @@ import React from 'react';
 import "./Card.css"
 
 const Card = (props) => {
-    // console.log(props)
     const {card, handleAdd} = props
     const { picture, name, time } = card
   
