@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Cards from '../Cards/Cards';
+import Qna from '../Qna/Qna';
 import Selection from '../Selection/Selection';
 
 
@@ -20,6 +21,7 @@ const Container = () => {
             </div>
             <Selection activity = {activity}></Selection>
         </div>
+        <Qna></Qna>
         </div>
     );
 };
