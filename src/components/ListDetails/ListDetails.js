@@ -1,10 +1,19 @@
 import React from 'react';
 
-const ListDetails = () => {
+const ListDetails = (props) => {
+    // console.log(props.time.activity)
+
+    const times = props.time.activity
+
+    let total = 0;
+    for(const time of times){
+        total = total + time.time
+    }
+
     return (
         <div className='mt-10'>
             <h1>Your Selection Details</h1>
-            <h2>Activity time: </h2>
+            <h2>Activity time: {total}hr</h2>
             <h2>Break Time: </h2>
         </div>
     );

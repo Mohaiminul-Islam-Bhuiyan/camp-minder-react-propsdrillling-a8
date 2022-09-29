@@ -4,14 +4,22 @@ import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import "./Cards.css"
 
-const Cards = () => {
+const Cards = (props) => {
+    console.log(props)
     const [cards, setCards] = useState([])
+    // const [activity, setActivity] = useState([])
 
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setCards(data))
     }, [])
+
+    // const handleAdd = (card) => {
+    //     const newCard = [...activity, card]
+    //     setActivity(newCard)
+    //     // console.log(newCard)
+    // }
 
     return (
         <div className='cards-container'>
@@ -25,6 +33,7 @@ const Cards = () => {
                 cards.map(card => <Card
                 key = {card.id}
                 card = {card}
+                handleAdd = {props.handleAdd}
                 ></Card>)
             }
             </div>

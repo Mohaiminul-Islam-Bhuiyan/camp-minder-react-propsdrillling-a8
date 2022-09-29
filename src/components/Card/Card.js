@@ -2,8 +2,10 @@ import React from 'react';
 import "./Card.css"
 
 const Card = (props) => {
-    console.log(props.card)
-    const { picture, name, time } = props.card
+    // console.log(props)
+    const {card, handleAdd} = props
+    const { picture, name, time } = card
+  
     return (
         <div className='card shadow-xl'>
             <div className="card w-full bg-base-100">
@@ -14,7 +16,7 @@ const Card = (props) => {
                     <h2 className="card-title">{name}</h2>
                     <p>Estimated Time: {time}hr</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Add To List</button>
+                        <button onClick={()=> handleAdd(card)} className="btn btn-primary">Add To List</button>
                     </div>
                 </div>
             </div>
