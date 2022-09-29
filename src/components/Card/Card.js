@@ -8,7 +8,7 @@ const Card = (props) => {
     return (
         <div className='card shadow-xl'>
             <div className="card w-full bg-base-100">
-                <figure className="px-10 pt-10">
+                <figure className='p-1'>
                     <img src={picture} alt="Shoes" className="rounded-xl w-full h-40" />
                 </figure>
                 <div className="card-body items-center text-center">
