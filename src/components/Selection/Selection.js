@@ -13,10 +13,10 @@ const Selection = (props) => {
         <div className='bg-gray-50 rounded-lg text-center'>
             <div className='flex justify-items-center items-center gap-2  p-4'>
                 <div className='w-10 rounded-full'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFh4khqabC6PI70RD1_ydd0S1QrHR7oSiLQ&usqp=CAU" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE1QSaAg6OvCUD9zfi36uFUAe1P1fKh_VBIw&usqp=CAU" alt="" />
                 </div>
                 <div>
-                <h1 className='text-xl font-extrabold'>Adnan Adim</h1>
+                <h1 className='text-xl font-extrabold'>Sherlock Holmes</h1>
                 <p><small>
                     <FontAwesomeIcon icon={faMap}></FontAwesomeIcon> 221b, Baker Street, London
                 </small></p>
